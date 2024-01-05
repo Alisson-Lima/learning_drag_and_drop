@@ -35,9 +35,9 @@ const App = () => {
   }
   
   return(
-    <div className="w-screen h-screen relative flex justify-center items-center bg-gray-200">
+    <div className="w-screen h-screen relative flex justify-center items-center bg-gray-200 p-4">
       <div className="w-[400px] h-fit p-5 rounded-xl bg-gray-200 border-2 border-gray-300 shadow-lg">
-        <h1 className="text-2xl text-gray-800 font-bold uppercase">Reordenate list</h1>
+        <h1 className="text-2xl text-gray-800 font-bold uppercase">Reordenable list</h1>
         <DragDropContext onDragEnd={handleDragDrop}>
           <Droppable droppableId="ROOT" type="group">
             {(provided)=>(
