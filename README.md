@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# React Beautiful DnD Learning Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository serves as a practice ground for learning and exploring the capabilities of the `react-beautiful-dnd` library. Feel free to use or modify as you navigate your journey in mastering drag-and-drop functionality in React.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository is dedicated to capturing and showcasing practical exercises and examples of `react-beautiful-dnd` library, and, using TypeScript of course. It's a hands-on approach to learning how to effectively implement drag-and-drop features within React applications.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Alisson-Lima/learning_drag_and_drop.git
+   cd learning_drag_and_drop
+   ```
+2. **Install Dependencies::**
+   ```bash
+   npm install
+   ```
+1. **Run the application:**
+   ```bash
+   npm start
+   ```
