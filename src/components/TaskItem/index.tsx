@@ -1,15 +1,21 @@
 import TaskIcon from "../TaskIcon"
+import {Draggable} from "react-beautiful-dnd"
 
 type TaskItemProps = {
-    id?: string,
-    content: string
+    id: string,
+    content: string,
+    index: number
 }
 
-const TaskItem = ({content}: TaskItemProps) => {
+const TaskItem = ({id, content, index}: TaskItemProps) => {
   return (
-    <div
-        className=" bg-gray-100 border-2 border-gray-200 p-4 rounded-lg flex gap-4 items-center"
-    ><TaskIcon/>{content}</div>
+    <Draggable draggableId={id} key={id} index={index}>
+      {(provided)=>(
+        <div {...provided.dragHandleProps} {...provided.draggableProps} ref={provided.innerRef} className=" bg-gray-100 border-2 border-gray-200 p-4 rounded-lg flex gap-4 items-center my-1">
+          <TaskIcon/>{content}
+        </div>
+      )}
+    </Draggable>
   )
 }
 
