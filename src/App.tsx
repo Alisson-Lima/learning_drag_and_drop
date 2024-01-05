@@ -1,16 +1,15 @@
 import { useState } from "react";
 import TaskItem from "./components/TaskItem";
-import {DragDropContext, Droppable} from "react-beautiful-dnd"
+import {DragDropContext, Droppable, DropResult} from "react-beautiful-dnd"
 
 import db from "./db/db";
 
 const App = () => {
-
+  
   const [stores, setStores] = useState(db)
-
-  const handleDragDrop = (results: any)=>{
-    const {source, destination, type} = results
-
+  
+  const handleDragDrop = ({source, destination, type}: DropResult)=>{
+    
     if(!destination){
       return
     }
